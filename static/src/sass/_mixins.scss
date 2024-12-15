@@ -1,0 +1,64 @@
+// display flex e inline-flex
+@mixin flex($direction: null, $align: null, $justify: null) {
+    display: flex;
+
+    $flex-props: (
+        "flex-direction": $direction,
+        "align-items": $align,
+        "justify-content": $justify
+    );
+
+    @each $prop, $value in $flex-props {
+        @if $value {
+            #{$prop}: $value;
+        }
+    }
+}
+
+@mixin inline-flex($direction: null, $align: null, $justify: null) {
+    display: inline-flex;
+
+    $flex-props: (
+        "flex-direction": $direction,
+        "align-items": $align,
+        "justify-content": $justify
+    );
+
+    @each $prop, $value in $flex-props {
+        @if $value {
+            #{$prop}: $value;
+        }
+    }
+}
+
+
+// responsiveness
+@mixin responsive($breakpoint, $limit: max) {
+    $breakpoints: (
+        "xs": 480px,
+        "sm": 560px,
+        "md": 768px,
+        "lg": 992px,
+        "xl": 1200px
+    );
+
+    $limit-size: if($limit ==min, min-width, max-width);
+
+    $breakpoint-value: if(map-has-key($breakpoints, $breakpoint), map-get($breakpoints, $breakpoint), $breakpoint);
+
+    @media only screen and (#{$limit-size}: #{$breakpoint-value}) {
+        @content;
+    }
+}
+
+
+// img positioning
+@mixin img-positioning($fit, $position: false) {
+    width: 100%;
+    height: 100%;
+    object-fit: $fit;
+
+    @if ($position) {
+        object-position: $position;
+    }
+}

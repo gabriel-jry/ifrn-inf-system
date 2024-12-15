@@ -1,0 +1,23 @@
+// project setup
+@import 'mixins';
+
+// base styles
+@import 'fonts';
+@import 'variables';
+@import 'reset';
+@import 'typography';
+
+// default styles
+@import 'container';
+@import 'components';
+
+// theme styles
+@import 'header';
+@import 'footer';
+
+// pages
+@import 'page-cursos';
+@import 'page-single-cursos';
+@import 'page-404';
+@import 'page-home';
+@import 'page-servidores';

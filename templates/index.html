@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %} Início {% endblock %}
+
+{% block content %}
+    <main>
+        <section class="s-areas-site">
+            <div class="container">
+                <div class="header">
+                    <h1>Conheça nossa instituição</h1>
+                    <p>Fique por dentro das informações atualizadas sobre nossos cursos e professores. Acesse:</p>
+                </div>
+
+                <div class="areas-wrapper">
+                    <a href="/cursos" class="card-area">
+                        <div class="img-box">
+                            <img src="../static/public/assets/images/pexels-christina-morillo-1181373.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <h3>Cursos</h3>
+
+                            <p>Explore uma variedade de cursos disponíveis e desvende oportunidades educacionais sob medida para você.</p>
+                        </div>
+                    </a>
+
+                    <a href="/professores" class="card-area">
+                        <div class="img-box">
+                            <img src="../static/public/assets/images/pexels-max-fischer-5212649.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <h3>Servidores</h3>
+
+                            <p>Desfrute de uma experiência completa ao conhecer em detalhes os perfis inspiradores dos servidores que compõem o Instituto.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

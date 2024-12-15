@@ -1,0 +1,23 @@
+header {
+    padding: 2.4rem 0;
+    background-color: var(--color-green-dark);
+
+    .container {
+        @include flex(row, center, space-between);
+        gap: 3.2rem;
+
+        .logo {
+            max-width: 20rem;
+        }
+    }
+
+    @include responsive(xs) {
+        .container {
+
+            .logo {
+                flex-basis: 40%;
+                max-width: 16rem;
+            }
+        }
+    }
+}

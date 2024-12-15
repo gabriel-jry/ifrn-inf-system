@@ -1,0 +1,66 @@
+.s-not-found {
+    padding: 6.4rem 0;
+    background-color: var(--bg-gray);
+
+    .container {
+        @include flex(row, center, center);
+        max-width: 56rem;
+        min-height: 70vh;
+
+        .header {
+            @include flex(row, center, space-between);
+            gap: 1.6rem;
+            width: 100%;
+
+            h1 {
+                font-size: 20rem;
+            }
+
+            img {
+                flex-grow: 1;
+                // flex-shrink: 0;
+                width: 100%;
+                max-width: 20rem;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .button {
+            margin-top: 3.2rem;
+            text-align: center;
+        }
+    }
+
+    @include responsive(md) {
+        .container {
+            min-height: auto;
+            
+            .header {
+                justify-content: center;
+
+                h1 {
+                    font-size: 16rem;
+                    line-height: 168px;
+                }
+            }
+        }
+    }
+
+    @include responsive(sm) {
+        .container {
+            
+            .header {
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

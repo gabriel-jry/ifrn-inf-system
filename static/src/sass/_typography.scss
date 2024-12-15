@@ -1,0 +1,112 @@
+// Typography
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: var(--main-font-1);
+}
+
+h1 {
+    font-size: 4.8rem;
+    line-height: 56px;
+
+    @include responsive(sm) {
+        font-size: 4rem;
+        line-height: 48px;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+
+    @include responsive(sm) {
+        font-size: 2.8rem;
+        line-height: 32px;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 32px;
+
+    @include responsive(sm) {
+        font-size: 1.8rem;
+        line-height: 26px;
+    }
+}
+
+h4 {
+    font-size: 1.8rem;
+    line-height: 26px;
+
+    @include responsive(sm) {
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
+}
+
+h5 {
+    font-size: 1.6rem;
+    line-height: 24px;
+
+    @include responsive(sm) {
+        font-size: 1.6rem;
+        line-height: 22px;
+    }
+}
+
+h6 {
+    font-size: 1.4rem;
+    line-height: 22px;
+
+    @include responsive(sm) {
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 24px;
+
+    @include responsive(sm) {
+        font-size: 1.6rem;
+        line-height: 22px;
+    }
+}
+
+.subtitle {
+    font-size: 2rem;
+    line-height: 28px;
+
+    @include responsive(sm) {
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
+}
+
+a {
+    transition: color .4s;
+}
+
+span,
+b,
+strong {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+span {
+    font-weight: inherit;
+}
+
+a,
+b, 
+strong {
+    font-weight: 700;
+}// End Typography

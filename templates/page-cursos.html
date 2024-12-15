@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %} Cursos {% endblock %}
+
+{% block content %}
+    <main>
+        <section class="s-courses">
+            <div class="container">
+                <h1>Nossos cursos</h1>
+
+                <nav class="breadcrumb">
+                    <ul class="items">
+                        {% for label, link in breadcrumb %}
+                            <li class="page-item"><a href="{{ link }}">{{ label }}</a></li>
+                        {% endfor %}
+                        <li class="page-item current">Cursos</li>
+                    </ul>
+                </nav>
+
+                <div class="courses">
+                    <aside class="sidebar">
+                        <div class="fields">
+                            <div class="search">
+                                <input type="text" id="search-input" oninput="filterCourses()" placeholder="Pesquisar curso...">
+                            </div>
+        
+                            <div class="filters">
+                                <label for="filtro">Filtrar por nível:</label>
+                                <select id="filtro" onchange="filtrarCards()">
+                                    <option value="todos">Todos</option>
+                                    {% set niveis = [] %}
+                                    {% for n in html_cursos %}
+                                        {% if n['modalidade'] not in niveis %}
+                                            {% set _ = niveis.append(n['modalidade']) %}
+                                            <option value="{{ n['modalidade'].lower() }}">{{ n['modalidade'] }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+    
+                        <a href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTA4Mg==" target="_blank" class="mec-card">
+                            <div class="content">
+                                <img src="../static/public/assets/images/e-mec-logo.png" alt="MEC" class="logo-mec">
+                                <p>Consulte o cadastro do IFRN no Sistema do e-MEC</p>
+                            </div>
+    
+                            <img src="../static/public/assets/images/e-mec-qr-code.png" alt="MEC - qrcode" class="qrcode">
+                        </a>
+                    </aside>
+    
+                    <div class="main-content">
+                        <div class="card-wrapper">
+                            {% for curso in html_cursos %}
+                            <div class="card-course">
+                                <div class="category">
+                                    <h4>{{ curso['modalidade'] }}</h4>
+                                </div>
+                                <div class="content">
+                                    <h3>{{ curso['descricao'] }}</h3>
+                
+                                    <div class="info">
+                                        <h4>Carga Horária:</h4>
+                                        <p>{{ curso['carga_horaria'] }}</p>
+                                    </div>
+                                </div>
+                
+                                <a href="/cursos/{{ curso['link'] }}" class="btn-card">
+                                    <span>Ver mais</span>
+                                    <img src="../static/public/assets/icons/right-arrow.svg" alt="Ver mais">
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

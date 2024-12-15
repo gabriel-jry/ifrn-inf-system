@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    border: none;
+    outline: none;
+    
+    // color: #212424;
+    color: var(--black);
+    font-family: var(--main-font-2);
+    font-size: 1.6rem;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    background-color: var(--white);
+    overflow-x: hidden;
+
+    @include responsive(sm) {
+        scroll-padding-top: 0;
+    }
+}
+
+header,
+main,
+footer {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}

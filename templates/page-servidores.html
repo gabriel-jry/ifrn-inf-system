@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %} Servidores {% endblock %}
+
+{% block content %}
+    <main>
+        <section class="s-servidores">
+            <div class="container">
+                <h1>Servidores</h1>
+
+                <nav class="breadcrumb">
+                    <ul class="items">
+                        {% for label, link in breadcrumb %}
+                            <li class="page-item"><a href="{{ link }}">{{ label }}</a></li>
+                        {% endfor %}
+                        <li class="page-item current">Servidores</li>
+                    </ul>
+                </nav>
+
+                <div class="servidores">
+                    <aside class="sidebar">
+                        <div class="fields">
+                            <div class="search">
+                                <input type="text" id="search-input" oninput="filterServidores()" placeholder="Pesquisar professor(a)...">
+                            </div>
+        
+                            <div class="filters">
+                                <label for="filtro">Filtar por campus:</label>
+                                <select id="filtro" onchange="filtrarServidores()">
+                                    <option value="todos">Todos</option>
+                                    {% set campus = [] %}
+                                    {% for c in html_professores %}
+                                        {% if c['campus'] not in campus %}
+                                            {% set _ = campus.append(c['campus']) %}
+                                            <option value="{{ c['campus'].lower() }}">{{ c['campus'] }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+    
+                        <a href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTA4Mg==" target="_blank" class="mec-card">
+                            <div class="content">
+                                <img src="../static/public/assets/images/e-mec-logo.png" alt="MEC" class="logo-mec">
+                                <p>Consulte o cadastro do IFRN no Sistema do e-MEC</p>
+                            </div>
+    
+                            <img src="../static/public/assets/images/e-mec-qr-code.png" alt="MEC - qrcode" class="qrcode">
+                        </a>
+                    </aside>
+    
+                    <div class="main-content">
+                        <div class="card-wrapper">
+                            {% for servidor in html_professores %}
+                            <div class="card-servidores">
+
+                                <div class="header">
+                                    <div class="img-wrapper">
+                                        <div class="img-box">
+                                            <img src="{{ servidor['url_foto_75x100'] }}" alt="{{ servidor['nome'] }}">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-wrapper">
+                                        <h3 class="title">{{ servidor['nome'] }}</h3>
+                                        <p>{{ servidor['categoria'] }}</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="info-wrapper">
+                                            <h4 class="title">Campus</h4>
+                                            <p class="campus">{{ servidor['campus'] }}</p>
+                                        </div>
+    
+                                        <div class="info-wrapper">
+                                            <h4 class="title">Matrícula</h4>
+                                            <p>{{ servidor['matricula'] }}</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="content">
+                                        <div class="info-wrapper">
+                                            <h4 class="title">Jornada de trabalho</h4>
+                                            <p>{{ servidor['jornada_trabalho'] }}</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="content">
+                                        <div class="info-wrapper">
+                                            <h4 class="title">Cargo</h4>
+                                            <p>{{ servidor['cargo'] }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

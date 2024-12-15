@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} - Projeto Web com Python</title>
+    <link rel="shortcut icon" href="../static/public/assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Project main styles -->
+    <link rel="stylesheet" href="../static/public/styles/main.css">
+    <!-- END Project main styles -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="../static/public/assets/images/logo.png" alt="Logo branca - IFRN">
+            </a>
+            <a href="#" class="btn-login">
+                <div class="icon">
+                    <img src="../static/public/assets/icons/log-in.svg" alt="Login">
+                </div>
+                <p>
+                    login ou<br>
+                    cadastre-se
+                </p>
+            </a>
+        </div>
+    </header>
+
+    {% block content %} {% endblock %}
+
+    <footer>
+        <div class="copyright">
+            <p>© 2023 | Alguns direitos reservados | Projeto web com Python</p>
+        </div>
+        <div class="copyright mobile">
+            <p>© 2023 <br> Alguns direitos reservados <br> Projeto web com Python</p>
+        </div>
+    </footer>
+
+    <!-- Project main styles -->
+    <script src="../static/public/scripts/main.js"></script>
+    <!-- END Project main styles -->
+</body>
+</html>

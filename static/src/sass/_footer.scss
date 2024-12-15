@@ -1,0 +1,24 @@
+footer {
+    .copyright {
+        padding: 2rem 0 2.4rem;
+        background-color: var(--black);
+
+        text-align: center;
+
+        p {
+            color: var(--white);
+        }
+
+        &.mobile {
+            display: none;
+        }
+
+        @include responsive(sm) {
+            display: none;
+
+            &.mobile {
+                display: block;
+            }
+        }
+    }
+}

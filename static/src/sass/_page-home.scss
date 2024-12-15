@@ -1,0 +1,60 @@
+.s-areas-site {
+    padding: 8rem 0;
+    background-color: var(--bg-gray);
+
+    .container {
+        @include flex(column, center, center);
+        min-height: 68vh;
+
+        .header {
+            text-align: center;
+
+            p {
+                max-width: 48rem;
+                margin: 1.2rem auto 0;
+
+                font-size: 2rem;
+                line-height: 28px;
+            }
+        }
+
+        .areas-wrapper {
+            @include flex(row, stretch, center);
+            gap: 4rem;
+            margin-top: 4.8rem;
+
+            .card-area {
+                flex-shrink: 1;
+            }
+        }
+    }
+
+    @include responsive(md) {
+        padding: 4.8rem 0;
+
+        .container {
+            display: block;
+            min-height: auto;
+
+            .areas-wrapper {
+                flex-direction: column;
+                align-items: center;
+
+                margin-top: 3.2rem;
+            }
+        }
+    }
+
+    @include responsive(sm) {
+        .container {
+            .header {
+
+                p {
+                    font-size: 1.6rem;
+                    line-height: 24px;
+                    max-width: 36rem;
+                }
+            }
+        }
+    }
+}

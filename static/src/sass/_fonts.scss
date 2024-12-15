@@ -1,0 +1,302 @@
+// Fira Sans Condensed
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.ttf') format('TrueType');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Black.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Black.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Black.ttf') format('TrueType');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.ttf') format('TrueType');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.ttf') format('TrueType');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.ttf') format('TrueType');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf') format('TrueType');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBoldItalic.ttf') format('TrueType');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.ttf') format('TrueType');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-MediumItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-MediumItalic.ttf') format('TrueType');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf') format('TrueType');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Italic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Italic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Italic.ttf') format('TrueType');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf') format('TrueType');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.ttf') format('TrueType');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Light.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Light.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Light.ttf') format('TrueType');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.ttf') format('TrueType');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.ttf') format('TrueType');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ThinItalic.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-ThinItalic.ttf') format('TrueType');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.woff2') format('woff2'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.woff') format('woff'),
+        url('../fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.ttf') format('TrueType');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+// Roboto
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-BlackItalic.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-BlackItalic.ttf') format('TrueType');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Black.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Black.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Black.ttf') format('TrueType');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-BoldItalic.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-BoldItalic.ttf') format('TrueType');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Bold.ttf') format('TrueType');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-MediumItalic.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-MediumItalic.ttf') format('TrueType');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Medium.ttf') format('TrueType');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Italic.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Italic.ttf') format('TrueType');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Regular.ttf') format('TrueType');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-LightItalic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-LightItalic.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-LightItalic.ttf') format('TrueType');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Light.ttf') format('TrueType');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-ThinItalic.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-ThinItalic.ttf') format('TrueType');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Thin.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Thin.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Thin.ttf') format('TrueType');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
